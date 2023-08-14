@@ -14,6 +14,7 @@ for (x = s + 1; x <= 99 ; x++)
 {
 putchar((s / 10) + '0');
 putchar((s % 10) + '0');
+putchar(' ');
 putchar((x / 10) + '0');
 putchar((x % 10) + '0');
 if (s < 98 && x <= 99)
