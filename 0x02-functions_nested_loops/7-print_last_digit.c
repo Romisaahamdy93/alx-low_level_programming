@@ -12,8 +12,8 @@ int (x);
 	x = n % 10;
 	if (n < 0)
 	{
-		x = (n * -1);
+		x = n * -1;
 	}
-	_putchar(x + '0');
+	_putchar('0' + x);
 	return (x);
 }
