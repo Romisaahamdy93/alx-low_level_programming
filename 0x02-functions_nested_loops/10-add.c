@@ -2,7 +2,9 @@
 /**
  * add - computes the absolute value of an integer
  *
- * @n: is the character to check
+ * @a: is the character to check
+ *
+ * @b: is the character to check
  *
  * Return: 1 and prints + if n is greater than zero
  */
