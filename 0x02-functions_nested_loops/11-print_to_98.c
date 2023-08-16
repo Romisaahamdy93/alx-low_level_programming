@@ -15,9 +15,9 @@ if (n <= 98)
 for (x = n; x <= 98; x++)
 {
 if (x != 98)
-printf("%d, ", i);
+printf("%d, ", x);
 else if (x == 98)
-printf("%d\n", i);
+printf("%d\n", x);
 }
 }
 else if (n >= 98)
@@ -25,9 +25,9 @@ else if (n >= 98)
 for (y = n; y >= 98; y--)
 {
 if (y != 98)
-printf("%d, ", i);
+printf("%d, ", y);
 else if (y == 98)
-printf("%d\n", i);
+printf("%d\n", y);
 }
 }
 }
