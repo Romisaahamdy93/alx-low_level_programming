@@ -19,7 +19,7 @@ for (a = 0; a < n; a++)
 {
 for (b = 0; b < n; b++)
 {
-if (b == 0)
+if (b == a)
 _putchar('\\');
 else if (b < a)
 _putchar(' ');
