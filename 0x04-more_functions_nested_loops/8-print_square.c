@@ -9,9 +9,9 @@
 void print_square(int size)
 {
 int x;
-for (x = 1; x <= n; x++)
+for (x = 1; x <= size; x++)
 {
-if (n <= 0)
+if (size <= 0)
 {
 _putchar('\n');
 }
