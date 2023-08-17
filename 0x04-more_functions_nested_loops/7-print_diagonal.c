@@ -1,24 +1,31 @@
 #include "main.h"
 /**
- * print_square - prints a square, followed by a new line
+ * print_diagonal - check the code
  *
- * @size: size of the square
+ * @n: is the number of times the character \
  *
  * Return: Always 0 (Success)
  */
-void print_square(int size)
+void print_diagonal(int n)
 {
 int a, b;
-for (a = 0; a < size; a++)
-{
-for (b = 0; b < size; b++)
-{
-if (size <= 0)
+if (n <= 0)
 {
 _putchar('\n');
 }
-_putchar('#');
+for (a = 0; a < n; a++)
+{
+for (b = 0; b < n; b++)
+{
+if (b == 0)
+{
+_putchar('\\');
+}
+else if (b < a)
+{
+_putchar(' ');
 }
 _putchar('\n');
+}
 }
 }
