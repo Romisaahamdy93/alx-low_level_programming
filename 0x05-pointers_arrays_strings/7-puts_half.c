@@ -20,12 +20,11 @@ j = (i - 1) / 2;
 j += 1;
 }
 else
-{
+i{
 j = i / 2;
 }
-while (j < i)
+for (; j < i; j++)
 {
-j++;
 _putchar(str[j]);
 }
 _putchar('\n');
