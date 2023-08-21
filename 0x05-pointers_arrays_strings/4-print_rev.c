@@ -13,8 +13,9 @@ while (*s != '\0')
 {
 s++;
 }
-while (x--)
+while (x >= 0)
 {
+x--;
 _putchar(s[x]);
 }
 _putchar('\n');
