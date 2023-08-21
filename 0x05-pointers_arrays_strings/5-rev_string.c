@@ -20,9 +20,9 @@ s++;
 }
 for (k = 0; k < (i / 2); k++)
 {
-temp = s[i];
-s[i] = *s;
+temp = s[k];
+s[k] = *s;
 *s = temp;
-s[i]--;
+s--;
 }
 }
