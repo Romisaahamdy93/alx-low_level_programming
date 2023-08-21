@@ -14,7 +14,7 @@ while (str[x] != '\0')
 {
 x++;
 }
-for (y = 0; y < j; y += 2)
+for (y = 0; y < x; y += 2)
 {
 _putchar(str[y]);
 }
