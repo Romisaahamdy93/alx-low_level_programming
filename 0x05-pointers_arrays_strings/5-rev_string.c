@@ -18,10 +18,11 @@ for (j = 0; j < i; j++)
 {
 s[i]++;
 }
-for (k = 0; k < (i / 2; k++)
+for (k = 0; k < (i / 2); k++)
 {
 temp = s[i];
 s[i] = s[i - 1 - k];
 s[i - 1 - k] = temp;
+s[i]--;
 }
 }
