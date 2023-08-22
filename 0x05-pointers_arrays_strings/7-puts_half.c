@@ -30,4 +30,3 @@ _putchar(str[j + 1]);
 }
 _putchar('\n');
 }
-}
