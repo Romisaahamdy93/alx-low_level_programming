@@ -12,7 +12,7 @@ int l, n, i;
 char temp;
 l = 0;
 n = 0;
-while (s[l] != '0')
+while (s[l] != '\0')
 {
 l++;
 }
