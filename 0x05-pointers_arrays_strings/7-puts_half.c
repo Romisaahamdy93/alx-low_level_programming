@@ -17,12 +17,12 @@ for (i = n / 2; str[i] != '0' ; i++)
 {
 _putchar(str[i]);
 }
+}
 else if (n % 2)
 {
 for (j = (n - 1) / 2; j < n - 1; j++)
 {
 _putchar(str[j + 1]);
-}
 }
 }
 _putchar('\n');
