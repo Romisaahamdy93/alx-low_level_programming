@@ -21,7 +21,7 @@ else if (n % 2)
 {
 for (j = (n - 1) / 2; j < n - 1; j++)
 {
-_putchar(str[j + 1])
+_putchar(str[j + 1]);
 }
 }
 }
