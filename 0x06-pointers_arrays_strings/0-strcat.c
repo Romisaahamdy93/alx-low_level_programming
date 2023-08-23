@@ -15,10 +15,10 @@ for (a = 0; dest[a] != '\0'; a++)
 {
 for (b = 0; src[b] != '\0'; b++)
 {
-dest[b] = src[b];
+dest[a] = src[b];
 a++;
 }
-dest[b] = '\0';
+dest[a] = '\0';
 }
 return (dest);
 }
