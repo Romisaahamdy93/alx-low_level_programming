@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _strspn - gets the length of a prefix substring
+ * _strspn - gets the length of a prefix substring
  * @s: the string
  * @accept: is the string which consist only of bytes from
  * Return: s which consist only of bytes from accept
