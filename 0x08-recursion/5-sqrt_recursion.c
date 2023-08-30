@@ -4,11 +4,13 @@
  * @n: is the number to check
  * Return: the square root
  */
+int square_root(int i, int j);
 int _sqrt_recursion(int n)
 {
 if (n < 0)
 {
 return (-1);
+}
 return (square_root(n, 0));
 }
 /**
@@ -19,12 +21,11 @@ return (square_root(n, 0));
  */
 int square_root(int i, int j)
 {
-if ( i * i == j)
+if ( j * j > i)
 {
-return (i);
+return (-1);
 }
-else if ( i * i < j)
-{
-return (square(j, i+1));
-}
+else if ( j * j == i)
+return (j);
+return (square_root(i, j + 1));
 }
