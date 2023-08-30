@@ -19,9 +19,9 @@ return (prime(n, n - 1));
  */
 int prime(int n, int i)
 {
-if (i == 0)
+if (i == 1)
 return (1);
-else if (n % i = 0 && i > 0)
+else if (n % i == 0 && i > 0)
 return (0);
 return (prime(n, i - 1));
 }
