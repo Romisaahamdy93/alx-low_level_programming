@@ -1,10 +1,10 @@
 #include "main.h"
+int square_root(int n, int i);
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: is the number to check
  * Return: the square root
  */
-int square_root(int i, int j);
 int _sqrt_recursion(int n)
 {
 if (n < 0)
@@ -15,17 +15,17 @@ return (square_root(n, 0));
 }
 /**
  * square_root - returns the natural square root of a number
- * @i: is the number to check
- * @j: square root
+ * @n: is the number to check
+ * @i: square root
  * Return: the square root
  */
-int square_root(int i, int j)
+int square_root(int n, int i)
 {
-if ( j * j > i)
+if (i * i > n)
 {
 return (-1);
 }
-else if ( j * j == i)
-return (j);
-return (square_root(i, j + 1));
+else if (i * i == n)
+return (i);
+return (square_root(n, i + 1));
 }
