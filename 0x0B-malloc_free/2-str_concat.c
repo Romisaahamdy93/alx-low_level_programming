@@ -23,7 +23,7 @@ while (s2[y] != '\0')
 y++;
 }
 size = x + y;
-ptr = malloc(size * sizeof(char) + 1);
+ptr = malloc(size *sizeof(char) + 1);
 if (ptr == NULL)
 return (NULL);
 for (z = 0, y = 0; z < size; z++)
