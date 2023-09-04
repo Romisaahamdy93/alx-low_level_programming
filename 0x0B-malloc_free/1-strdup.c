@@ -22,5 +22,6 @@ for (y = 0; y < x; y++)
 {
 ptr[y] = str[y];
 }
+ptr[y] = '\0';
 return (ptr);
 }
