@@ -12,7 +12,7 @@ char *ptr;
 unsigned int x = 0;
 if (size == 0)
 return (NULL);
-ptr = malloc(size * sizeof(char))
+ptr = malloc(size * sizeof(char));
 if (ptr == NULL)
 return (NULL);
 while (x < size)
