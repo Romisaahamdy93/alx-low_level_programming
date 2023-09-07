@@ -16,9 +16,9 @@ size = max - min + 1;
 ptr = malloc(size *sizeof(int));
 if (ptr == NULL)
 return (NULL);
-for (i = 0; min <= max; i++)
+for (x = 0; min <= max; x++)
 {
-ptr[i] = min;
+ptr[x] = min;
 min++;
 }
 return (ptr);
