@@ -58,8 +58,8 @@ if ((*ndog).name == NULL)
 {
 free(ndog);
 return (NULL);
-(*ndog).owner = malloc((l2 + 1) * sizeof(char));
 }
+(*ndog).owner = malloc((l2 + 1) * sizeof(char));
 if ((*ndog).owner == NULL)
 {
 free(ndog);
