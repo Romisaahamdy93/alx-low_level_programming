@@ -15,9 +15,10 @@ va_start(args, n);
 for (x = 0; x < n; x++)
 {
 string = va_arg(args, char *);
-printf("%s", string);
 if (string == NULL)
 printf("%s", "(nil)");
+else
+printf("%s", string);
 if (x != n - 1 && separator != NULL)
 printf("%s", separator);
 }
