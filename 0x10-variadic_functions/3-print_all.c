@@ -38,7 +38,9 @@ void print_str(char *separator, va_list args)
 char *string;
 string = va_arg(args, char *);
 if (string == NULL)
+{
 printf("%s%s", separator, "(nil");
+}
 printf("%s%s", separator, string);
 }
 /**
