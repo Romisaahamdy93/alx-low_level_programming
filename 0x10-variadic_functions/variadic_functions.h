@@ -15,8 +15,8 @@ void print_all(const char * const format, ...);
  */
 typedef struct types
 {
-	char *print;
-	void (*f)(char *separator, va_list args);
+char *print;
+void (*f)(char *separator, va_list args);
 } p_t;
 
 #endif
