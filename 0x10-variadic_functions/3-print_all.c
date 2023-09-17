@@ -54,7 +54,6 @@ p_t types[] = {
 {"i", print_int},
 {"f", print_float},
 {"s", print_str},
-{NULL, NULL}
 };
 int a = 0;
 int b = 0;
