@@ -56,15 +56,15 @@ p_t types[] = {
 {"s", print_str},
 {NULL, NULL}
 };
-unsigned int a = 0;
-unsigned int b = 0;
+int a = 0;
+int b = 0;
 char *separator = "";
 va_list args;
 va_start(args, format);
 while (format != NULL && format[a])
 {
 b = 0;
-while (b < 4)
+while (b <= 4)
 {
 if (format[a] == *types[b].print)
 {
