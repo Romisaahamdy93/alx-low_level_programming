@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_char - Prints a character 
+ * print_char - Prints a character
  * @separator: The separator
  * @args: arguments
  */
