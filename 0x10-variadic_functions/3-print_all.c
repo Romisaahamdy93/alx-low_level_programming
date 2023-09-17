@@ -64,7 +64,7 @@ va_start(args, format);
 while (format != NULL && format[a])
 {
 b = 0;
-while (b < 4)
+while (types[b].print)
 {
 if (format[a] == *types[b].print)
 {
