@@ -56,8 +56,8 @@ p_t types[] = {
 {"s", print_str},
 {NULL, NULL}
 };
-int a = 0;
-int b = 0;
+unsigned int a = 0;
+unsigned int b = 0;
 char *separator = "";
 va_list args;
 va_start(args, format);
