@@ -49,6 +49,7 @@ printf("%s%s", separator, string);
  */
 void print_all(const char * const format, ...)
 {
+va_list args;
 print_t types[] = {
 {"c", print_char},
 {"i", print_int},
@@ -58,7 +59,6 @@ print_t types[] = {
 unsigned int a = 0;
 unsigned int b = 0;
 char *separator = "";
-va_list args;
 va_start(args, format);
 while (format != NULL && format[a])
 {
