@@ -17,6 +17,6 @@ typedef struct types
 {
 char *print;
 void (*f)(char *separator, va_list args);
-} p_t;
+} print_t;
 
 #endif

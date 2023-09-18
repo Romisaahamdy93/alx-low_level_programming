@@ -49,14 +49,14 @@ printf("%s%s", separator, string);
  */
 void print_all(const char * const format, ...)
 {
-p_t types[] = {
+print_t types[] = {
 {"c", print_char},
 {"i", print_int},
 {"f", print_float},
 {"s", print_str},
 };
-int a = 0;
-int b = 0;
+unsigned int a = 0;
+unsigned int b = 0;
 char *separator = "";
 va_list args;
 va_start(args, format);
