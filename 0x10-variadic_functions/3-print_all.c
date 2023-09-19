@@ -40,6 +40,7 @@ string = va_arg(args, char *);
 if (string == NULL)
 {
 printf("%s%s", separator, "(nil");
+return;
 }
 printf("%s%s", separator, string);
 }
