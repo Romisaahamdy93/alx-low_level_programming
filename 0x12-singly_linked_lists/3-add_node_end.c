@@ -7,7 +7,7 @@
  *
  * Return: string length
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 int l;
 for (l = 0; *s != '\0'; s++)
@@ -25,6 +25,8 @@ return (l);
 list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *new_node, *new;
+if (str != NULL)
+{
 new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
 return (NULL);
@@ -40,7 +42,6 @@ else
 {
 new = *head;
 while (new->next != NULL)
-{
 new = new->next;
 new->next = new_node;
 return (new);
