@@ -14,8 +14,8 @@ if (head != NULL)
 for (node = head, x = 0; node && x < index; x++)
 {
 node = node->next;
-return (node);
 }
+return (node);
 }
 return (NULL);
 }
