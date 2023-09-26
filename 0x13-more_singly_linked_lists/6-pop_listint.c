@@ -13,7 +13,7 @@ return (0);
 if (*head != NULL)
 {
 node = (*head)->next;
-x = (*head)->x;
+x = (*head)->n;
 free(*head);
 *head = node;
 }
