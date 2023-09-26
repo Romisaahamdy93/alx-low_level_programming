@@ -11,9 +11,8 @@ listint_t *node;
 unsigned int x;
 if (head != NULL)
 {
-for (x = 0; node && x < index; x++)
+for (node = head, x = 0; node && x < index; x++)
 {
-node = head;
 node = node->next;
 return (node);
 }
