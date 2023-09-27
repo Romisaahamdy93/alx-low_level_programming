@@ -9,7 +9,7 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 listint_t *new_node, *new = *head;
-unsigned int x;
+unsigned int x = 0;
 if (new == NULL && idx != 0)
 return (NULL);
 while (new && x < idx - 1)
@@ -27,7 +27,7 @@ new_node->next = *head;
 *head = new_node;
 return (new_node);
 }
-if (x + 1 == idx)
+if (x == idx - 1)
 {
 new_node->next = new->next;
 new->next = new_node;
