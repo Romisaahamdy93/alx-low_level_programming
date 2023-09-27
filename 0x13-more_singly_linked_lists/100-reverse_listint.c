@@ -10,14 +10,13 @@ listint_t *old = NULL;
 listint_t *next = NULL;
 if (head == NULL || *head == NULL)
 return (NULL);
-old = *head;
-*head = NULL;
-while (old != NULL)
+while (*head != NULL)
 {
-next = old->next;
-old->next = old;
+next = (*head)->next;
+(*head)->next = old;
 old = *head;
 *head = next;
 }
+*head = old;
 return (*head);
 }
