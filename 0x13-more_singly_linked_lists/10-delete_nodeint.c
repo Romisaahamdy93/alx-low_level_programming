@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * delete_nodeint_at_index - deletes the node at index 
+ * delete_nodeint_at_index - deletes the node at index
  * @head: is the head of linked list
  * @index: is the index of list
  * Return: 1 if it succeeded, -1 if it failed
