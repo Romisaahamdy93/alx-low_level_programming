@@ -27,7 +27,7 @@ new_node->next = *head;
 *head = new_node;
 return (new_node);
 }
-if (x == idx - 1)
+if (x + 1 == idx)
 {
 new_node->next = new->next;
 new->next = new_node;
