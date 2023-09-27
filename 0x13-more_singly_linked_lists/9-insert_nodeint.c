@@ -12,7 +12,7 @@ listint_t *new_node, *new = *head;
 unsigned int x;
 if (new == NULL && idx != 0)
 return (NULL);
-while (list && x < idx - 1)
+while (new && x < idx - 1)
 {
 new = new->next;
 x++;
@@ -27,7 +27,7 @@ new_node->next = *head;
 *head = new_node;
 return (new_node);
 }
-if (x = idx - 1)
+if (x == idx - 1)
 {
 new_node->next = new->next;
 new->next = new_node;
