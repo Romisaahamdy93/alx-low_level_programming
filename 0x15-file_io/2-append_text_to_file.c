@@ -20,7 +20,7 @@ while (text_content[len] != '\0')
 len++;
 }
 wr = write(op, text_content, len);
-if (wr == NULL || wr != len)
+if (wr == -1 || wr != len)
 return (-1);
 close(op);
 return (1);
