@@ -11,18 +11,27 @@ int op, re, wr;
 char *buf;
 if (filename == NULL)
 return (0);
-buf = malloc(sizeof(letters));
+buf = malloc(sizeof (char) * letters);
 if (buf == NULL)
 return (0);
 op = open(filename, O_RDONLY);
 if (op == -1)
+{
+free(buf);
 return (0);
+}
 re = read(op, buf, letters);
 if (re == -1)
+{
+free(buf);
 return (0);
+}
 wr = write(STDOUT_FILENO, buf, re);
 if (wr == -1 || wr != re)
+{
+free(buf);
 return (0);
+}
 free(buf);
 close(op);
 return (wr);
