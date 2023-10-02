@@ -11,7 +11,7 @@ int op, re, wr;
 char *buf;
 if (filename == NULL)
 return (0);
-buf = malloc(sizeof (char) * letters));
+buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
 return (0);
 op = open(filename, O_RDONLY);
