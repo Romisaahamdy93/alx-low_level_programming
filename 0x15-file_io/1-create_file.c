@@ -19,11 +19,6 @@ if (text_content != NULL)
 while (text_content[len] != '\0')
 len++;
 }
-else
-{
-close(op);
-return (1);
-}
 wr = write(op, text_content, len);
 if (wr == -1 || wr != len)
 return (-1);
