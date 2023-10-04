@@ -27,7 +27,7 @@ if (to_op == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
-while ((re = read(_from, buff, BUFSIZ)) > 0)
+while ((re = read(from_op, buff, BUFSIZ)) > 0)
 {
 if (write(to_op, buff, re) != re)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
