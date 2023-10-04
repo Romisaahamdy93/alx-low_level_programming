@@ -44,9 +44,7 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from_op);
 exit(100);
 }
 if (close(to_op) == -1)
-{
 dprintf(STDERR_FILENO, "Error: Can't close %d\n", to_op);
 exit(100);
-}
 return (0);
 }
