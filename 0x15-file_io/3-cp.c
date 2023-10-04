@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 int from_op, to_op, re;
-char buf[BUFFSIZE];
+char buf[BUFSIZ];
 if (argc != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -20,16 +20,16 @@ if (from_op == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-to_op = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
+to_op = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (to_op == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 exit(99);
 }
-while ((re = read(from_op, buf, BUFFSIZE)) > 0)
+while ((re = read(from_op, buf, BUFSIZ)) > 0)
 {
 if (write(to_op, buf, re) != re)
-dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2])
+dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 exit(99);
 }
 if (re == -1)
