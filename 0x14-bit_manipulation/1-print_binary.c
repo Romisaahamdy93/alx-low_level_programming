@@ -11,7 +11,7 @@ if (n == 0)
 _putchar('0');
 while (b >= 0)
 {
-if (n > b & 1)
+if (n >> b & 1)
 {
 _putchar('1');
 p++;
