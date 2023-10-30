@@ -35,6 +35,11 @@ exit(99);
 if (re == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+exit(98);
+}
+if (close(from_op) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from_op);
 exit(100);
 }
 else if (close(to_op) == -1)
