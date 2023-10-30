@@ -19,8 +19,8 @@ if (text_content != NULL)
 while (text_content[l] != '\0')
 l++;
 }
-wr = write(op, text_content, l)
-if (wr == - || wr != l)
+wr = write(op, text_content, l);
+if (wr == -1 || wr != l)
 return (-1);
 close(op);
 return (1);
