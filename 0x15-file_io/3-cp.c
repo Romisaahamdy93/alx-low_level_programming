@@ -37,7 +37,7 @@ if (re == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(100);
 }
-else if (close(to_op) == -1 )
+else if (close(to_op) == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to_op);
 exit(100);
