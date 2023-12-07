@@ -17,7 +17,7 @@ return (add_dnodeint(h, n));
 old_node = *h;
 for (i = 0; old_node != NULL && i < idx; i++)
 old_node = old_node->next;
-if(old_node == NULL && i == idx)
+if (old_node == NULL && i == idx)
 return (add_dnodeint_end(h, n));
 else if (old_node != NULL)
 {
