@@ -11,7 +11,7 @@ unsigned long int i;
 hash_table = malloc(sizeof(hash_table_t));
 if (hash_table == NULL)
 return (NULL);
-hash_table->array = malloc(size * sizeof(hash_table * ));
+hash_table->array = malloc(size * sizeof(hash_table_t *));
 if (hash_table->array == NULL)
 {
 free(hash_table);
