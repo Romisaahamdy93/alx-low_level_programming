@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 /**
  * struct hash_node_s - Node of a hash table
  * @key: The key, string
@@ -18,7 +19,6 @@ char *key;
 char *value;
 struct hash_node_s *next;
 } hash_node_t;
-
 
 /**
  * struct hash_table_s - Hash table data structure
