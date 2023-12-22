@@ -11,7 +11,7 @@ if (ht == NULL)
 return;
 for (i = 0; i < ht->size; i++)
 {
-next = ht->array[i];
+temp = ht->array[i];
 while (temp != NULL)
 {
 next = temp->next;
